@@ -13,124 +13,124 @@ const collectionName = 'books';
 // Sample book data
 const books = [
   {
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
+    title: 'Gifted Hands',
+    author: 'Ben Carson',
+    genre: 'Autobiography',
+    published_year: 1990,
+    price: 10.99,
+    in_stock: true,
+    pages: 240,
+    publisher: 'Zondervan'
+  },
+  {
+    title: 'You Were Born Rich',
+    author: 'Bob Proctor',
+    genre: 'Self-Help',
+    published_year: 1997,
+    price: 40.31,
+    in_stock: true,
+    pages: 198,
+    publisher: 'LifeSuccess Productions'
+  },
+  {
+    title: 'The Pilgrim\'s Progess',
+    author: 'John Bunyan',
+    genre: 'Christian',
+    published_year: 1678,
+    price: 9.69,
+    in_stock: true,
+    pages: 324,
+    publisher: 'Hendrickson'
+  },
+  {
+    title: 'Walden',
+    author: 'Henry David Thoreau',
+    genre: 'Memoir',
+    published_year: 1854,
+    price:22.00,
+    in_stock: false,
+    pages: 352,
+    publisher: 'Ticknor and Fields'
+  },
+  {
+    title: 'Atomic Habits',
+    author: 'James Clear',
+    genre: 'Fantasy',
+    published_year: 2018,
+    price: 23.04,
+    in_stock: true,
+    pages: 320,
+    publisher: 'Random House Business'
+  },
+  {
+    title: 'The Chronicles of Narnia',
+    author: 'C. S. Lewis',
     genre: 'Fiction',
-    published_year: 1960,
-    price: 12.99,
+    published_year: 2001,
+    price: 14.93,
+    in_stock: true,
+    pages: 768,
+    publisher: 'HarperCollins'
+  },
+  {
+    title: 'Rich Dad Poor Dad',
+    author: 'Robert Kiyosaki',
+    genre: 'Personal Finance',
+    published_year: 2000,
+    price: 15.33,
     in_stock: true,
     pages: 336,
-    publisher: 'J. B. Lippincott & Co.'
+    publisher: 'Warner Books'
   },
   {
-    title: '1984',
-    author: 'George Orwell',
-    genre: 'Dystopian',
-    published_year: 1949,
-    price: 10.99,
-    in_stock: true,
-    pages: 328,
-    publisher: 'Secker & Warburg'
-  },
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    genre: 'Fiction',
-    published_year: 1925,
-    price: 9.99,
-    in_stock: true,
-    pages: 180,
-    publisher: 'Charles Scribner\'s Sons'
-  },
-  {
-    title: 'Brave New World',
-    author: 'Aldous Huxley',
-    genre: 'Dystopian',
-    published_year: 1932,
-    price: 11.50,
-    in_stock: false,
-    pages: 311,
-    publisher: 'Chatto & Windus'
-  },
-  {
-    title: 'The Hobbit',
-    author: 'J.R.R. Tolkien',
-    genre: 'Fantasy',
-    published_year: 1937,
-    price: 14.99,
-    in_stock: true,
-    pages: 310,
-    publisher: 'George Allen & Unwin'
-  },
-  {
-    title: 'The Catcher in the Rye',
-    author: 'J.D. Salinger',
-    genre: 'Fiction',
-    published_year: 1951,
-    price: 8.99,
-    in_stock: true,
-    pages: 224,
-    publisher: 'Little, Brown and Company'
-  },
-  {
-    title: 'Pride and Prejudice',
-    author: 'Jane Austen',
+    title: 'Love Comes Softly',
+    author: 'Janette Oke',
     genre: 'Romance',
-    published_year: 1813,
-    price: 7.99,
+    published_year: 1979,
+    price: 27.12,
     in_stock: true,
-    pages: 432,
-    publisher: 'T. Egerton, Whitehall'
+    pages: 188,
+    publisher: 'Bethany House'
   },
   {
-    title: 'The Lord of the Rings',
-    author: 'J.R.R. Tolkien',
-    genre: 'Fantasy',
-    published_year: 1954,
-    price: 19.99,
-    in_stock: true,
-    pages: 1178,
-    publisher: 'Allen & Unwin'
-  },
-  {
-    title: 'Animal Farm',
-    author: 'George Orwell',
-    genre: 'Political Satire',
-    published_year: 1945,
-    price: 8.50,
+    title: 'Little Rivers',
+    author: 'Henry Van Dyke',
+    genre: 'Essay',
+    published_year: 1908,
+    price: 6.99,
     in_stock: false,
-    pages: 112,
-    publisher: 'Secker & Warburg'
+    pages: 348,
+    publisher: 'Copp Clark Company'
   },
   {
-    title: 'The Alchemist',
-    author: 'Paulo Coelho',
-    genre: 'Fiction',
-    published_year: 1988,
-    price: 10.99,
+    title: 'The Hiding Place',
+    author: 'Corrie Ten Boom',
+    genre: 'NonFiction',
+    published_year: 1974,
+    price: 7.85,
     in_stock: true,
-    pages: 197,
-    publisher: 'HarperOne'
+    pages: 242,
+    publisher: 'Bantam Books'
   },
   {
-    title: 'Moby Dick',
+    title: 'The Emperor\'s New Clothes',
     author: 'Herman Melville',
-    genre: 'Adventure',
+    genre: 'Folktale',
     published_year: 1851,
-    price: 12.50,
+    price: 7.99,
     in_stock: false,
-    pages: 635,
-    publisher: 'Harper & Brothers'
+    pages: 48,
+    publisher: 'clarion Books'
   },
   {
-    title: 'Wuthering Heights',
-    author: 'Emily Brontë',
-    genre: 'Gothic Fiction',
-    published_year: 1847,
-    price: 9.99,
+    title: 'The Shack',
+    author: 'William P. Young',
+    genre: 'Thriller',
+    published_year: 2007,
+    price: 20.38,
     in_stock: true,
-    pages: 342,
-    publisher: 'Thomas Cautley Newby'
+    pages: 249,
+    publisher: 'Hodder & Stoughton'
   }
 ];
 
